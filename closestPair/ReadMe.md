@@ -1,7 +1,11 @@
  author: Paul Salmon
+ 
  CodeEval challenge "Closest Pair"
+ 
  Difficulty: Hard
+ 
  Score: 100%
+ 
 
 Find the closest pair of points on a grid, and print the distance between them (rounded to 4 decimal places). Input file can contain multiple sets.
  
