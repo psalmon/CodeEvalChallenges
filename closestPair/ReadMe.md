@@ -50,12 +50,20 @@ Sample output
 Notes:
 
 An n lg n algorithm exists for the closest pairs problem. It is a recursive divide and conquer algorithm.
+
 It works something like:
+
 1)Sort all points by x coords.
+
 2)Split into two sets.
+
 3)Find left set minimum, find right set minimum.
-4)Find the minimum where one point is on the left set and one is on the right set (This can be done in linear time, apparently)
+
+4)Find the minimum where one point is on the left set and one is on the right set (This can be done in linear time,
+apparently)
+
 5)Take the minimum of all 3 mins.
+
 
 This approach is *only* faster if step 4 is accomplished in linear time. The naive approach takes us right back to my solution, which is quadratic. The way this is accomplished
 is by recognizing a "sparsity property". The idea being that for every point in a set, you only need to consider points in a rectangular dimension of our sets minimum for x, and 2 times that minimum for y.
